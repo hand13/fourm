@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand13.bbs.dao.UserDao">
+
+    <insert id="addUser" parameterType="User">
+        INSERT INTO t_user(user_name,password,salt,role_ids,locked,credits,topics)
+                VALUES (#{userName},#{password},#{salt},#{roleIds},#{locked} ,#{credits},#{topics});
+    </insert>
+
+    <delete id="deleteUser">
+        DELETE FROM t_user WHERE user_name = #{username}
+    </delete>
+
+    <select id="findUserById" resultType="User">
+        SELECT user_id AS userId,
+            user_name AS userName,
+            password,
+            salt,
+            role_ids AS roleIds,
+            locked,
+            credits,
+            topics
+        FROM t_user WHERE user_id = #{id}
+    </select>
+
+    <select id="findUserByName" resultType="User">
+        SELECT user_id AS userId,
+            user_name AS userName,
+            password,
+            salt,
+            role_ids AS roleIds,
+            locked,
+            credits,
+            topics
+        FROM t_user WHERE user_name = #{userName}
+    </select>
+
+    <update id="updateUser" parameterType="User">
+        UPDATE t_user SET
+            user_name = #{userName},
+            password = #{password},
+            salt = #{salt},
+            role_ids = #{roleIds},
+            locked = #{locked},
+            credits = #{credits},
+            topics = ${topics}
+        WHERE user_id = ${userId}
+    </update>
+</mapper>

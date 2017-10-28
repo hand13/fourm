@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand13.bbs.dao.TopicDao">
+
+    <insert id="addTopic" parameterType="Topic">
+        INSERT INTO t_topic (board_id, topic_title, user_id,
+                             create_time, last_post, topic_views, topic_replics, digest)
+                VALUES (#{boardId},#{topicTitle},#{userId},
+                              #{createTime},#{lastPost},#{topicViews},#{topicReplics},#{digest})
+    </insert>
+
+    <delete id="deleteTopic">
+        DELETE FROM t_topic WHERE topic_id = #{id}
+    </delete>
+
+    <select id="getTopicByBoardId" resultType="Topic">
+        SELECT topic_id AS topicId,board_id AS boardId,
+            topic_title AS topicTitle, user_id AS userId,
+            create_time AS createTime, last_post AS lastPost, topic_views AS topicViews,
+            topic_replics AS topicReplics, digest AS digest
+        FROM t_topic
+        WHERE board_id = #{boardId}
+    </select>
+
+    <select id="getTopicByUserId" resultType="Topic">
+        SELECT topic_id AS topicId,board_id AS boardId,
+               topic_title AS topicTitle, user_id AS userId,
+               create_time AS createTime, last_post AS lastPost, topic_views AS topicViews,
+               topic_replics AS topicReplics, digest AS digest
+        FROM t_topic
+        WHERE user_id = ${userId}
+    </select>
+
+    <update id="updateTopic" parameterType="Topic">
+        UPDATE t_topic SET
+            topic_title = #{topicTitle},
+            last_post = #{lastPost},
+            topic_views = #{topicViews},
+            topic_replics = #{topicReplics},
+            digest = #{digest}
+        WHERE topic_id = #{topicId}
+    </update>
+</mapper>

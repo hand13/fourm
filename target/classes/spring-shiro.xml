@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="userRealm" class="com.hand13.bbs.realm.UserRealm"
+          p:credentialsMatcher-ref="credentialsMatcher"/>
+    <bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher"
+          p:storedCredentialsHexEncoded="true"
+          p:hashAlgorithmName="md5"
+          p:hashIterations="2"
+          p:hashSalted="true"/>
+    <bean id="securityManager" class="org.apache.shiro.mgt.DefaultSecurityManager"
+          p:realm-ref="userRealm"/>
+    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean"
+          p:staticMethod="org.apache.shiro.SecurityUtils.setSecurityManager"
+          p:arguments-ref="securityManager"/>
+</beans>

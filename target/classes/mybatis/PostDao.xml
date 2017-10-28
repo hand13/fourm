@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand13.bbs.dao.PostDao">
+    <insert id="addPost" parameterType="Post">
+        INSERT INTO t_post (post_id,user_id, board_id, topic_id,
+                            post_type, post_title, post_context, create_time)
+                VALUES (#{postId},#{userId},#{boardId},#{topicId},
+                        #{postType},#{postTitle},#{postContext},#{createTime})
+    </insert>
+
+    <delete id="deletePostByPostId">
+        DELETE FROM t_post WHERE post_id = ${postId}
+    </delete>
+
+    <select id="getPostByTopicId" resultType="Post">
+        SELECT post_id AS postId,user_id AS userId,board_id AS boardId,topic_id AS topicId,
+            post_type AS postType,post_title AS postTitle,post_context AS postContext,
+            create_time AS createTime
+        FROM t_post
+        WHERE topic_id = #{topicId}
+    </select>
+
+    <select id="getPostByUserId" resultType="Post">
+        SELECT post_id AS postId,user_id AS userId,board_id AS boardId,topic_id AS topicId,
+               post_type AS postType,post_title AS postTitle,post_context AS postContext,
+               create_time AS createTime
+        FROM t_post
+        WHERE user_id = #{userId}
+    </select>
+
+    <update id="updatePost" parameterType="Post">
+        UPDATE t_post SET
+            post_title = #{postTitle},
+            post_context = #{postContext}
+        WHERE post_id = #{postId}
+    </update>
+</mapper>
