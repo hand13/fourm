@@ -14,7 +14,7 @@ public interface BoardDao {
 
     Board findBoardById(Integer boardId);
 
-    List<BoardDao> findAllBoard();
+    List<Board> findAllBoard();
 
     void deleteBoardById(Integer boardId);
 

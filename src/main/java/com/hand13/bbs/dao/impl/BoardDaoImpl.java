@@ -37,7 +37,7 @@ public class BoardDaoImpl implements BoardDao {
     }
 
     @Override
-    public List<BoardDao> findAllBoard() {
+    public List<Board> findAllBoard() {
         return template.selectList(Board_Sql+"findAllBoard");
     }
 
