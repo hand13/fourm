@@ -17,7 +17,8 @@ import java.util.List;
 @Controller
 @RequestMapping(path = "/forum")
 public class ForumControl {
-    private final int pageSize = 20;
+    private final int TOPIC_SIZE = 20;
+    private final int POST_SIZE = 10;
     private ForumBiz forumBiz;
 
     public ForumBiz getForumBiz() {
@@ -41,7 +42,7 @@ public class ForumControl {
                                      @PathVariable(name = "num") String num) {
         Board board = forumBiz.findBoardByName(boardName);
         int n  = Integer.parseInt(num);
-        List<Topic> topics = forumBiz.findTopicByBoardId(board.getBoardId(),n,pageSize);
+        List<Topic> topics = forumBiz.findTopicByBoardId(board.getBoardId(),n,TOPIC_SIZE);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("board",board);
         modelAndView.addObject("topics",topics);
@@ -53,8 +54,8 @@ public class ForumControl {
                                      @PathVariable(name = "num") String num) {
         int id = Integer.parseInt(topicId);
         int n = Integer.parseInt(num);
-        Topic topic = forumBiz.findTopicVoByTopicId(id);
-        List<Post> posts = forumBiz.findPostVoByTopicId(id);
+        Topic topic = forumBiz.findTopicByTopicId(id);
+        List<Post> posts = forumBiz.findPostByTopicId(id,n,POST_SIZE);
         Post mainPost = null;
         for(Post post: posts){
             if(post.getPostType() == 0){

@@ -73,17 +73,17 @@ public class ForumBizImpl implements ForumBiz {
 
     @Override
     public List<Topic> findTopicByBoardId(int boardId,int start,int size) {
-        return topicDao.getTopicByBoardId(boardId);
+        return topicDao.getTopicByBoardIdWithPage(boardId,start,size);
     }
 
     @Override
-    public Topic findTopicVoByTopicId(int id) {
+    public Topic findTopicByTopicId(int id) {
         return topicDao.getTopicByTopicId(id);
     }
 
     @Override
-    public List<Post> findPostVoByTopicId(int id) {
-        return postDao.getPostByTopicId(id);
+    public List<Post> findPostByTopicId(int id,int start,int size) {
+        return postDao.getPostByTopicIdWithPage(id,start,size);
     }
 
     @Override

@@ -12,8 +12,8 @@ public interface ForumBiz {
     List<Board> getAllBoard();
     Board findBoardByName(String name);
     List<Topic> findTopicByBoardId(int boardId,int start,int size);
-    Topic findTopicVoByTopicId(int id);
-    List<Post> findPostVoByTopicId(int id);
+    Topic findTopicByTopicId(int id);
+    List<Post> findPostByTopicId(int id,int start,int size);
     void addTopic(Topic topic);
     void addPost(Post post);
     void addBoard(Board board);
