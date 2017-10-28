@@ -1,9 +1,11 @@
 package com.hand13.bbs.control;
 import com.hand13.bbs.entity.Board;
+import com.hand13.bbs.entity.Post;
 import com.hand13.bbs.entity.Topic;
 import com.hand13.bbs.service.ForumBiz;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -47,9 +49,38 @@ public class ForumControl {
         modelAndView.setViewName("");
         return modelAndView;
     }
-    @RequestMapping(path = "/topic/{topicName}/{num}")
-    public ModelAndView topicShow(@PathVariable(name = "topicName") String topicName,
+    @RequestMapping(path = "/topic/{topicId}/{num}")
+    public ModelAndView topicShow(@PathVariable(name = "topicId") String topicId,
                                      @PathVariable(name = "num") String num) {
-        return null;
+        int id = Integer.parseInt(topicId);
+        int n = Integer.parseInt(num);
+        Topic topic = forumBiz.findTopicVoByTopicId(id);
+        List<Post> posts = forumBiz.findPostVoByTopicId(id);
+        Post mainPost = null;
+        for(Post post: posts){
+            if(post.getPostType() == 0){
+                mainPost = post;
+                break;
+            }
+        }
+        posts.remove(mainPost);
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("topic",topic);
+        modelAndView.addObject("mainPost",mainPost);
+        modelAndView.addObject("posts",posts);
+        return modelAndView;
     }
+
+    @RequestMapping(path = "/addTopic")
+    public ModelAndView addTopic(Topic topic) {
+        forumBiz.addTopic(topic);
+        ModelAndView modelAndView = new ModelAndView();
+        return modelAndView;
+    }
+
+    @RequestMapping(path = "/addPost")
+    public ModelAndView addPost(Post post) {
+
+    }
+
 }

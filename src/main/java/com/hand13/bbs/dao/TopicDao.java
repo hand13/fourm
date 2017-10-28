@@ -20,5 +20,5 @@ public interface TopicDao {
 
     void deleteTopicById(Integer topicId);
 
-
+    Topic getTopicByTopicId(int topicId);
 }

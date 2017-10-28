@@ -1,13 +1,17 @@
 package com.hand13.bbs.service.impl;
-
 import com.hand13.bbs.dao.BoardDao;
+import com.hand13.bbs.dao.PostDao;
 import com.hand13.bbs.dao.TopicDao;
+import com.hand13.bbs.dao.UserDao;
 import com.hand13.bbs.entity.Board;
+import com.hand13.bbs.entity.Post;
 import com.hand13.bbs.entity.Topic;
 import com.hand13.bbs.service.ForumBiz;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -18,6 +22,8 @@ import java.util.List;
 public class ForumBizImpl implements ForumBiz {
     private BoardDao boardDao;
     private TopicDao topicDao;
+    private PostDao postDao;
+    private UserDao userDao;
 
     public BoardDao getBoardDao() {
         return boardDao;
@@ -37,6 +43,23 @@ public class ForumBizImpl implements ForumBiz {
         this.topicDao = topicDao;
     }
 
+    public UserDao getUserDao() {
+        return userDao;
+    }
+    @Autowired
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
+    public PostDao getPostDao() {
+        return postDao;
+    }
+
+    @Autowired
+    public void setPostDao(PostDao postDao) {
+        this.postDao = postDao;
+    }
+
     @Override
     public List<Board> getAllBoard() {
         return boardDao.findAllBoard();
@@ -51,5 +74,37 @@ public class ForumBizImpl implements ForumBiz {
     @Override
     public List<Topic> findTopicByBoardId(int boardId,int start,int size) {
         return topicDao.getTopicByBoardId(boardId);
+    }
+
+    @Override
+    public Topic findTopicVoByTopicId(int id) {
+        return topicDao.getTopicByTopicId(id);
+    }
+
+    @Override
+    public List<Post> findPostVoByTopicId(int id) {
+        return postDao.getPostByTopicId(id);
+    }
+
+    @Override
+    @Transactional
+    public void addTopic(Topic topic) {
+        topic.setLastPost(new Date());
+        topic.setCreateTime(new Date());
+        topic.setTopicViews(0);
+        topicDao.addTopic(topic);
+        Board board = boardDao.findBoardById(topic.getBoardId());
+        boardDao.updateBoard(board);
+        board.setTopicNum(board.getBoardId()+1);
+    }
+
+    @Override
+    public void addPost(Post post) {
+        post.setCreateTime(new Date());
+        Topic topic = topicDao.getTopicByTopicId(post.getTopicId());
+        topic.setLastPost(new Date());
+        topic.setTopicReplics(topic.getTopicReplics()+1);
+        topicDao.updateTopic(topic);
+        
     }
 }

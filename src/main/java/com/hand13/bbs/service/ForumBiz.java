@@ -1,8 +1,7 @@
 package com.hand13.bbs.service;
-
 import com.hand13.bbs.entity.Board;
+import com.hand13.bbs.entity.Post;
 import com.hand13.bbs.entity.Topic;
-
 import java.util.List;
 
 /**
@@ -13,4 +12,8 @@ public interface ForumBiz {
     List<Board> getAllBoard();
     Board findBoardByName(String name);
     List<Topic> findTopicByBoardId(int boardId,int start,int size);
+    Topic findTopicVoByTopicId(int id);
+    List<Post> findPostVoByTopicId(int id);
+    void addTopic(Topic topic);
+    void addPost(Post post);
 }

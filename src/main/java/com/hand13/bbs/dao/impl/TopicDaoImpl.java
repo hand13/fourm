@@ -52,4 +52,9 @@ public class TopicDaoImpl implements TopicDao {
     public void deleteTopicById(Integer topicId) {
         template.delete(TOPICDAO_SQL+"deleteTopic",topicId);
     }
+
+    @Override
+    public Topic getTopicByTopicId(int topicId) {
+        return template.selectOne(TOPICDAO_SQL+"getTopicByTopicId",topicId);
+    }
 }

@@ -214,7 +214,7 @@
     </column>
     <column id="65" parent="27" name="digest">
       <Position>9</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="66" parent="27" name="PRIMARY">

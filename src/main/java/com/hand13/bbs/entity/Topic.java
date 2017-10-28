@@ -16,7 +16,7 @@ public class Topic implements Serializable {
   private Date lastPost;
   private Integer topicViews;
   private Integer topicReplics;
-  private Integer digest;
+  private String digest;
 
     public Integer getTopicId() {
         return topicId;
@@ -82,11 +82,11 @@ public class Topic implements Serializable {
         this.topicReplics = topicReplics;
     }
 
-    public Integer getDigest() {
+    public String getDigest() {
         return digest;
     }
 
-    public void setDigest(Integer digest) {
+    public void setDigest(String digest) {
         this.digest = digest;
     }
 
