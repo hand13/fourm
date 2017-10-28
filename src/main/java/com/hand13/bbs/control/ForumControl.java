@@ -1,14 +1,15 @@
 package com.hand13.bbs.control;
+
 import com.hand13.bbs.entity.Board;
 import com.hand13.bbs.entity.Post;
 import com.hand13.bbs.entity.Topic;
 import com.hand13.bbs.service.ForumBiz;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
 import java.util.List;
 
 /**
@@ -75,12 +76,22 @@ public class ForumControl {
     public ModelAndView addTopic(Topic topic) {
         forumBiz.addTopic(topic);
         ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("");
         return modelAndView;
     }
 
     @RequestMapping(path = "/addPost")
     public ModelAndView addPost(Post post) {
-
+        forumBiz.addPost(post);
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("");
+        return modelAndView;
     }
-
+    @RequestMapping(path = "/addBoard")
+    public ModelAndView addBoard(Board board) {
+        forumBiz.addBoard(board);
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("");
+        return modelAndView;
+    }
 }

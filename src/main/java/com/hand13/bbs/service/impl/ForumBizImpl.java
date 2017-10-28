@@ -1,4 +1,5 @@
 package com.hand13.bbs.service.impl;
+
 import com.hand13.bbs.dao.BoardDao;
 import com.hand13.bbs.dao.PostDao;
 import com.hand13.bbs.dao.TopicDao;
@@ -13,7 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
-
 /**
  * Created by hd110 on 2017/10/28.
  * edited by hand13
@@ -105,6 +105,12 @@ public class ForumBizImpl implements ForumBiz {
         topic.setLastPost(new Date());
         topic.setTopicReplics(topic.getTopicReplics()+1);
         topicDao.updateTopic(topic);
-        
+        postDao.addPost(post);
+    }
+
+    @Override
+    public void addBoard(Board board) {
+        board.setTopicNum(0);
+        boardDao.addBoard(board);
     }
 }

@@ -2,6 +2,8 @@ package com.hand13.bbs.service;
 import com.hand13.bbs.entity.User;
 import com.hand13.bbs.exception.UserExistException;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * Created by hd110 on 2017/10/26.
  * edited by hand13
@@ -18,4 +20,5 @@ public interface UserBiz {
 
     public void updateUser(User user) ;
 
+    public void login(User user, HttpServletRequest request);
 }

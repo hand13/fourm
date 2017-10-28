@@ -16,4 +16,5 @@ public interface ForumBiz {
     List<Post> findPostVoByTopicId(int id);
     void addTopic(Topic topic);
     void addPost(Post post);
+    void addBoard(Board board);
 }
