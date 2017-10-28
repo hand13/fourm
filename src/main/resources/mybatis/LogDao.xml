@@ -21,4 +21,13 @@
         SELECT login_log_id as logId, user_id AS userId, ip,message,time
         FROM t_log WHERE user_id = #{userId}
     </select>
+
+    <select id="findLogByUserIdWithPage" resultType="Log">
+        SELECT login_log_id as logId, user_id AS userId, ip,message,time
+        FROM t_log WHERE user_id = #{userId} ORDER BY time LIMIT #{start},#{size}
+    </select>
+    <select id="findLogWithPage" resultType="Log">
+        SELECT login_log_id as logId, user_id AS userId, ip,message,time
+        FROM t_log  ORDER BY time DESC  LIMIT #{start},#{size}
+    </select>
 </mapper>

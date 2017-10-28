@@ -21,4 +21,8 @@ public interface TopicDao {
     void deleteTopicById(Integer topicId);
 
     Topic getTopicByTopicId(int topicId);
+
+    List<Topic> getTopicByBoardIdWithPage(Integer boardId,int start,int size);
+
+    List<Topic> getTopicByUserIdWithPage(Integer userId,int start,int size);
 }

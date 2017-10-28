@@ -1,5 +1,4 @@
 package com.hand13.bbs.control;
-
 import com.hand13.bbs.entity.Board;
 import com.hand13.bbs.entity.Post;
 import com.hand13.bbs.entity.Topic;
@@ -9,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-
 import java.util.List;
 
 /**
@@ -19,7 +17,7 @@ import java.util.List;
 @Controller
 @RequestMapping(path = "/forum")
 public class ForumControl {
-    private int pageSize = 20;
+    private final int pageSize = 20;
     private ForumBiz forumBiz;
 
     public ForumBiz getForumBiz() {

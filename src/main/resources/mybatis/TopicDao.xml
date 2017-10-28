@@ -16,32 +16,38 @@
     </delete>
 
     <select id="getTopicByBoardId" resultType="Topic">
-        SELECT topic_id AS topicId,board_id AS boardId,
-            topic_title AS topicTitle, user_id AS userId,
-            create_time AS createTime, last_post AS lastPost, topic_views AS topicViews,
-            topic_replics AS topicReplics, digest AS digest
-        FROM t_topic
+        <include refid="topic"/>
         WHERE board_id = #{boardId}
     </select>
-
+    <select id="getTopicByBoardIdWithPage" resultType="Topic">
+        <include refid="topic"/>
+        WHERE board_id = #{boardId}
+        ORDER BY create_time
+        LIMIT #{start},#{size}
+    </select>
+    <select id="getTopicByUserIdWithPage" resultType="Topic">
+        <include refid="topic"/>
+        WHERE user_id = #{userId}
+        ORDER BY create_time
+        LIMIT #{start},#{size}
+    </select>
     <select id="getTopicByUserId" resultType="Topic">
+        <include refid="topic"/>
+        WHERE user_id = ${userId}
+    </select>
+
+    <select id="getTopicByTopicId" resultType="Topic">
+        <include refid="topic"/>
+        WHERE topic_id = #{topicId}
+    </select>
+
+    <sql id="topic">
         SELECT topic_id AS topicId,board_id AS boardId,
                topic_title AS topicTitle, user_id AS userId,
                create_time AS createTime, last_post AS lastPost, topic_views AS topicViews,
                topic_replics AS topicReplics, digest AS digest
         FROM t_topic
-        WHERE user_id = ${userId}
-    </select>
-
-    <select id="getTopicByTopicId" resultType="Topic">
-        SELECT topic_id AS topicId,board_id AS boardId,
-        topic_title AS topicTitle, user_id AS userId,
-        create_time AS createTime, last_post AS lastPost, topic_views AS topicViews,
-        topic_replics AS topicReplics, digest AS digest
-        FROM t_topic
-        WHERE topic_id = #{topicId}
-    </select>
-
+    </sql>
     <update id="updateTopic" parameterType="Topic">
         UPDATE t_topic SET
             topic_title = #{topicTitle},

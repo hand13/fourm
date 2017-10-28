@@ -2,11 +2,14 @@ package com.hand13.bbs.dao.impl;
 
 import com.hand13.bbs.dao.BoardDao;
 import com.hand13.bbs.entity.Board;
+import org.apache.ibatis.session.RowBounds;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by hd110 on 2017/10/26.
@@ -54,5 +57,13 @@ public class BoardDaoImpl implements BoardDao {
     @Override
     public void addBoard(Board board) {
         template.insert(Board_Sql+"addBoard",board);
+    }
+
+    @Override
+    public List<Board> findBoardWithPage(int start, int size) {
+        Map<String,Integer> map = new HashMap<>();
+        map.put("currentPage",start);
+        map.put("size",size);
+        return template.selectList(Board_Sql+"findBoardWithPage",map);
     }
 }

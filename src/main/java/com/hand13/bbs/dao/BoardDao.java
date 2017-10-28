@@ -21,4 +21,6 @@ public interface BoardDao {
     void updateBoard(Board board);
 
     void addBoard(Board board);
+
+    List<Board> findBoardWithPage(int start,int size);
 }

@@ -18,4 +18,8 @@ public interface PostDao {
     List<Post> getPostByUserId(Integer userId);
 
     void updatePost(Post post);
+
+    List<Post> getPostByUserIdWithPage(Integer userId,int start,int size);
+
+    List<Post> getPostByTopicIdWithPage(Integer topic,int start,int size);
 }

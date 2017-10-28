@@ -17,4 +17,8 @@ public interface LogDao {
     void addLog(Log log);
 
     void deleteLogById(Integer logId);
+
+    List<Log> findLogByUserIdWithPage(Integer id,int start,int size);
+
+    List<Log> findLogWithPage(int start,int size);
 }

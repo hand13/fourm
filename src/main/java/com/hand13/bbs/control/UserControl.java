@@ -1,5 +1,4 @@
 package com.hand13.bbs.control;
-
 import com.hand13.bbs.entity.User;
 import com.hand13.bbs.exception.UserExistException;
 import com.hand13.bbs.service.AccountBiz;
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -46,8 +44,8 @@ public class UserControl {
         return modelAndView;
     }
 
-    @RequestMapping(path = "/changepassowrd",method = RequestMethod.POST)
-    public void changepassowrd(HttpServletRequest request) {
+    @RequestMapping(path = "/password",method = RequestMethod.POST)
+    public void password(HttpServletRequest request) {
         String password = request.getParameter("password");
         User user = (User)request.getSession().getAttribute("user");
         accountBiz.updatePassword(user.getUserId(),password);
