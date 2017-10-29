@@ -27,14 +27,14 @@
     <select id="getPostByUserIdWithPage" resultType="Post">
         <include refid="post"/>
         WHERE user_id = #{userId}
-        ORDER BY create_time DESC
+        ORDER BY create_time
         LIMIT #{start},#{size}
     </select>
 
-    <select id="getPostByTopicIdWithPage" resultType="Post">
+    <select id="getPostByTopicIdWithPage" resultType="Post" parameterType="map">
         <include refid="post"/>
         WHERE topic_id = #{topicId}
-        ORDER BY create_time DESC
+        ORDER BY create_time
         LIMIT #{start},#{size}
     </select>
 

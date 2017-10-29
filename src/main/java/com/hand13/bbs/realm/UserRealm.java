@@ -1,5 +1,6 @@
 package com.hand13.bbs.realm;
 
+import com.hand13.bbs.dao.RoleDao;
 import com.hand13.bbs.dao.UserDao;
 import com.hand13.bbs.entity.User;
 import com.hand13.bbs.service.UserBiz;
@@ -11,6 +12,8 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 /**
  * Created by hd110 on 2017/10/25.
  * edited by hand13
@@ -18,7 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class UserRealm extends AuthorizingRealm {
 
     private UserBiz userBiz;
-
+    private RoleDao roleDao;
     public UserBiz getUserBiz() {
         return userBiz;
     }
@@ -28,11 +31,23 @@ public class UserRealm extends AuthorizingRealm {
         this.userBiz = userBiz;
     }
 
+    public RoleDao getRoleDao() {
+        return roleDao;
+    }
+
+    @Autowired
+    public void setRoleDao(RoleDao roleDao) {
+        this.roleDao = roleDao;
+    }
+
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo
             (PrincipalCollection principalCollection) {
         String username = (String)principalCollection.getPrimaryPrincipal();
+        User user = userBiz.findUserByName(username);
+        List<String> roles = roleDao.getRoles(user.getRoles());
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+        info.addRoles(roles);
         return info;
     }
 

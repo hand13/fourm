@@ -22,13 +22,13 @@
     <select id="getTopicByBoardIdWithPage" resultType="Topic">
         <include refid="topic"/>
         WHERE board_id = #{boardId}
-        ORDER BY create_time
+        ORDER BY create_time DESC
         LIMIT #{start},#{size}
     </select>
     <select id="getTopicByUserIdWithPage" resultType="Topic">
         <include refid="topic"/>
         WHERE user_id = #{userId}
-        ORDER BY create_time
+        ORDER BY create_time DESC
         LIMIT #{start},#{size}
     </select>
     <select id="getTopicByUserId" resultType="Topic">

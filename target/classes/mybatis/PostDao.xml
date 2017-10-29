@@ -15,19 +15,27 @@
     </delete>
 
     <select id="getPostByTopicId" resultType="Post">
-        SELECT post_id AS postId,user_id AS userId,board_id AS boardId,topic_id AS topicId,
-            post_type AS postType,post_title AS postTitle,post_context AS postContext,
-            create_time AS createTime
-        FROM t_post
+        <include refid="post"/>
         WHERE topic_id = #{topicId}
     </select>
 
     <select id="getPostByUserId" resultType="Post">
-        SELECT post_id AS postId,user_id AS userId,board_id AS boardId,topic_id AS topicId,
-               post_type AS postType,post_title AS postTitle,post_context AS postContext,
-               create_time AS createTime
-        FROM t_post
+        <include refid="post"/>
         WHERE user_id = #{userId}
+    </select>
+
+    <select id="getPostByUserIdWithPage" resultType="Post">
+        <include refid="post"/>
+        WHERE user_id = #{userId}
+        ORDER BY create_time DESC
+        LIMIT #{start},#{size}
+    </select>
+
+    <select id="getPostByTopicIdWithPage" resultType="Post" parameterType="map">
+        <include refid="post"/>
+        WHERE topic_id = #{topicId}
+        ORDER BY create_time DESC
+        LIMIT #{start},#{size}
     </select>
 
     <update id="updatePost" parameterType="Post">
@@ -36,4 +44,11 @@
             post_context = #{postContext}
         WHERE post_id = #{postId}
     </update>
+    <sql id="post">
+        SELECT
+        post_id AS postId,user_id AS userId,board_id AS boardId,topic_id AS topicId,
+        post_type AS postType,post_title AS postTitle,post_context AS postContext,
+        create_time AS createTime
+        FROM t_post
+    </sql>
 </mapper>

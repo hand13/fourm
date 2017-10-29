@@ -6,6 +6,7 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -15,7 +16,7 @@ import java.util.List;
 @Repository
 public class RoleDaoImpl implements RoleDao {
 
-    private static final String ROLEDAO_SQL= "com.hand13.bbs.dao.";
+    private static final String ROLEDAO_SQL= "com.hand13.bbs.dao.RoleDao";
 
     private SqlSessionTemplate template;
 
@@ -51,5 +52,15 @@ public class RoleDaoImpl implements RoleDao {
     @Override
     public void deleteRoleById(Integer roleId) {
         template.delete(ROLEDAO_SQL+"deleteRole",roleId);
+    }
+
+    @Override
+    public List<String> getRoles(List<Integer> ids) {
+        List<String> roles = new LinkedList<>();
+        for(Integer id:ids) {
+            String role = template.selectOne(ROLEDAO_SQL+"getRole",ids);
+            roles.add(role);
+        }
+        return roles;
     }
 }

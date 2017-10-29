@@ -41,7 +41,7 @@ public class ForumControl {
     public ModelAndView modelShow(@PathVariable(name = "boardName") String boardName,
                                      @PathVariable(name = "num") String num) {
         Board board = forumBiz.findBoardByName(boardName);
-        int n  = Integer.parseInt(num);
+        int n  = Integer.parseInt(num) - 1;
         List<Topic> topics = forumBiz.findTopicByBoardId(board.getBoardId(),n,TOPIC_SIZE);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("board",board);
@@ -53,7 +53,7 @@ public class ForumControl {
     public ModelAndView topicShow(@PathVariable(name = "topicId") String topicId,
                                      @PathVariable(name = "num") String num) {
         int id = Integer.parseInt(topicId);
-        int n = Integer.parseInt(num);
+        int n = Integer.parseInt(num) - 1;
         Topic topic = forumBiz.findTopicByTopicId(id);
         List<Post> posts = forumBiz.findPostByTopicId(id,n,POST_SIZE);
         Post mainPost = null;

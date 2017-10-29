@@ -16,7 +16,7 @@ import java.util.Map;
 @Repository
 public class PostDaoImpl implements PostDao {
 
-    private static final String PostDao_SQL= "com.hand13.bbs.dao.";
+    private static final String PostDao_SQL= "com.hand13.bbs.dao.PostDao.";
 
     private SqlSessionTemplate template;
 

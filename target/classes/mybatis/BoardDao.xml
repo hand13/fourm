@@ -39,6 +39,15 @@
         FROM t_board
     </select>
 
+    <select id="findBoardWithPage" resultType="Board" parameterType="map">
+        SELECT board_id AS boardId,
+        board_name AS boardName,
+        board_desc AS boardDesc,
+        topic_num AS topicNum
+        FROM t_board
+        ORDER BY board_name
+        LIMIT #{currentPage},#{size}
+    </select>
     <update id="updateBoard" parameterType="Board">
         UPDATE t_board SET board_name = #{boardName},
             board_desc = #{boardDesc},

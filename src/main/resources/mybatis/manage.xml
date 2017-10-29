@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand13.bbs.dao.ManageDao">
+    <select id="getBoardIdByManagerName" resultType="java.lang.Integer">
+        SELECT board_id FROM t_manage WHERE user_name = #{username}
+    </select>
+    <select id="getManagerByBoardId" resultType="java.lang.String">
+        SELECT user_name FROM t_manage WHERE board_id = #{boardId}
+    </select>
+    <delete id="deleteManage">
+        DELETE FROM t_manage WHERE board_id = #{boardId} AND user_name = #{username}
+    </delete>
+    <insert id="addManage">
+        INSERT INTO t_manage(board_id, user_name)
+                VALUES (#{boardId},#{username})
+    </insert>
+</mapper>

@@ -4,6 +4,8 @@ package com.hand13.bbs.entity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.io.Serializable;
+import java.util.LinkedList;
+import java.util.List;
 
 public class User implements Serializable {
 
@@ -15,6 +17,7 @@ public class User implements Serializable {
   private Integer locked;
   private Integer credits;
   private Integer topics;
+  private List<Integer> roles;
 
   public  String getCredentialsSalt() {
       return userName+salt;
@@ -53,11 +56,20 @@ public class User implements Serializable {
     }
 
     public String getRoleIds() {
-        return roleIds;
+        StringBuilder stringBuilder = new StringBuilder("");
+        for(int i : roles) {
+            stringBuilder.append(i).append(";");
+        }
+        return stringBuilder.toString();
     }
 
     public void setRoleIds(String roleIds) {
         this.roleIds = roleIds;
+        String[] ids = roleIds.split(";");
+        roles = new LinkedList<>();
+        for(String id:ids) {
+            roles.add(Integer.parseInt(id));
+        }
     }
 
     public Integer getLocked() {
@@ -82,6 +94,14 @@ public class User implements Serializable {
 
     public void setTopics(Integer topics) {
         this.topics = topics;
+    }
+
+    public List<Integer> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Integer> roles) {
+        this.roles = roles;
     }
 
     @Override

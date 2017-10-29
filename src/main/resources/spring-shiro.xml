@@ -26,7 +26,7 @@
         <property name="filterChainDefinitions">
             <value>
                 /login.jsp = anon
-                /e =fw
+                /login = authc
             </value>
         </property>
     </bean>
