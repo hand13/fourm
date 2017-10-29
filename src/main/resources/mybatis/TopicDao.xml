@@ -43,10 +43,12 @@
 
     <sql id="topic">
         SELECT topic_id AS topicId,board_id AS boardId,
-               topic_title AS topicTitle, user_id AS userId,
+               topic_title AS topicTitle, t_topic.user_id AS userId,
                create_time AS createTime, last_post AS lastPost, topic_views AS topicViews,
-               topic_replics AS topicReplics, digest AS digest
+               topic_replics AS topicReplics, digest AS digest,
+                t_user.user_name AS username
         FROM t_topic
+        LEFT JOIN t_user ON t_topic.user_id = t_user.user_id
     </sql>
     <update id="updateTopic" parameterType="Topic">
         UPDATE t_topic SET

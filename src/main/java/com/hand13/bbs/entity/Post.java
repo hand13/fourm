@@ -13,6 +13,7 @@ public class Post  implements Serializable{
   private Integer postType;
   private String postTitle;
   private String postContext;
+  private String username;
   private Date createTime;
 
     public Integer getPostId() {
@@ -77,6 +78,14 @@ public class Post  implements Serializable{
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     @Override

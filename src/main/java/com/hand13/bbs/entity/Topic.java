@@ -12,6 +12,7 @@ public class Topic implements Serializable {
   private Integer boardId;
   private String topicTitle;
   private Integer userId;
+  private String username;
   private Date createTime;
   private Date lastPost;
   private Integer topicViews;
@@ -93,5 +94,13 @@ public class Topic implements Serializable {
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

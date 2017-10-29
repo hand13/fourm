@@ -5,32 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85fd7eb2-30ac-48ab-9539-53cf8a55d77c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/ManageDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../serious/src/main/resources/mybatis/manage.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../serious/target/test-classes/com/hand13/bbs/test/RealmTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../serious/target/test-classes/com/hand13/bbs/test/UserDaoTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/.idea/dataSources/6d17a80c-939e-444c-94aa-d9b025ddc328.xml" afterPath="$PROJECT_DIR$/../serious/.idea/dataSources/6d17a80c-939e-444c-94aa-d9b025ddc328.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../serious/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/control/ForumControl.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/control/ForumControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/ManageDao.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/ManageDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/RoleDao.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/RoleDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/PostDaoImpl.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/PostDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/RoleDaoImpl.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/RoleDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/TopicDaoImpl.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/TopicDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/User.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/realm/UserRealm.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/realm/UserRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Post.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Post.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Topic.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Topic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/resources/mybatis/PostDao.xml" afterPath="$PROJECT_DIR$/../serious/src/main/resources/mybatis/PostDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/resources/mybatis/RoleDao.xml" afterPath="$PROJECT_DIR$/../serious/src/main/resources/mybatis/RoleDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/resources/mybatis/TopicDao.xml" afterPath="$PROJECT_DIR$/../serious/src/main/resources/mybatis/TopicDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/resources/spring-shiro.xml" afterPath="$PROJECT_DIR$/../serious/src/main/resources/spring-shiro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/../serious/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/target/classes/mybatis/BoardDao.xml" afterPath="$PROJECT_DIR$/../serious/target/classes/mybatis/BoardDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/target/classes/mybatis/LogDao.xml" afterPath="$PROJECT_DIR$/../serious/target/classes/mybatis/LogDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/target/classes/mybatis/PostDao.xml" afterPath="$PROJECT_DIR$/../serious/target/classes/mybatis/PostDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/target/classes/mybatis/TopicDao.xml" afterPath="$PROJECT_DIR$/../serious/target/classes/mybatis/TopicDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/target/classes/spring-application.xml" afterPath="$PROJECT_DIR$/../serious/target/classes/spring-application.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/target/classes/spring-shiro.xml" afterPath="$PROJECT_DIR$/../serious/target/classes/spring-shiro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/target/classes/spring-web.xml" afterPath="$PROJECT_DIR$/../serious/target/classes/spring-web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/../serious/out/" />
     <ignored path="$PROJECT_DIR$/../serious/target/" />
@@ -141,16 +120,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/RoleDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RoleDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/RoleDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -161,29 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/RoleDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-              <folding>
-                <marker date="1509248132413" expanded="true" signature="291:425" ph="SELECT role_... t_role" />
-                <marker date="1509248132413" expanded="true" signature="499:662" ph="SELECT role_... t_role" />
-                <marker date="1509248132413" expanded="true" signature="734:898" ph="SELECT role_... t_role" />
-                <marker date="1509248132413" expanded="true" signature="969:1088" ph="INSERT INTO t_role... " />
-                <marker date="1509248132413" expanded="true" signature="1162:1335" ph="UPDATE t_rol... " />
-                <marker date="1509248132413" expanded="true" signature="1388:1432" ph="DELETE FROM " />
-                <marker date="1509248132413" expanded="true" signature="1482:1531" ph="SELECT role t_role" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/filter/LoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="374">
+              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,17 +142,100 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serious.t_role" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/8e09ca2f/6d17a80c-939e-444c-94aa-d9b025ddc328/serious.t_role">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="Topic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Topic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="e#2019#2020#0" expanded="true" />
+                <element signature="e#2050#2051#0" expanded="true" />
+                <element signature="e#2098#2099#0" expanded="true" />
+                <element signature="e#2138#2139#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+        </entry>
+      </file>
+      <file leaf-file-name="TopicDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/TopicDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+              <folding>
+                <marker date="1509250182443" expanded="true" signature="271:569" ph="INSERT INTO t_topic... " />
+                <marker date="1509250182443" expanded="true" signature="623:665" ph="DELETE FROM " />
+                <marker date="1509250182443" expanded="true" signature="768:804" ph="SELECT topic... t_topic" />
+                <marker date="1509250182443" expanded="true" signature="1324:1358" ph="SELECT topic... t_topic" />
+                <marker date="1509250182443" expanded="true" signature="1461:1475" ph="SELECT topic... t_topic" />
+                <marker date="1509250182443" expanded="true" signature="1461:1497" ph="SELECT topic... t_topic" />
+                <marker date="1509250182443" expanded="true" signature="1542:1880" ph="SELECT topic... t_topic" />
+                <marker date="1509250182443" expanded="true" signature="1542:1941" ph="SELECT topic... t_topic" />
+                <marker date="1509250182443" expanded="true" signature="2013:2262" ph="UPDATE t_top... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Post.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+              <folding>
+                <element signature="e#1704#1705#0" expanded="true" />
+                <element signature="e#1735#1736#0" expanded="true" />
+                <element signature="e#1783#1784#0" expanded="true" />
+                <element signature="e#1823#1824#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostDao.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/PostDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding>
+                <marker date="1509250182473" expanded="true" signature="267:547" ph="INSERT INTO t_post... " />
+                <marker date="1509250182473" expanded="true" signature="608:652" ph="DELETE FROM " />
+                <marker date="1509250182473" expanded="true" signature="1420:1552" ph="UPDATE t_pos... " />
+                <marker date="1509250182473" expanded="true" signature="1595:1868" ph="SELECT post_... t_post" />
+                <marker date="1509250182473" expanded="true" signature="1595:1928" ph="SELECT post_... t_post" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/LogDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+              <folding>
+                <marker date="1509190210795" expanded="true" signature="264:370" ph="INSERT INTO t_log... " />
+                <marker date="1509190210795" expanded="true" signature="426:473" ph="DELETE FROM " />
+                <marker date="1509190210795" expanded="true" signature="543:626" ph="SELECT login... t_log" />
+                <marker date="1509190210795" expanded="true" signature="701:810" ph="SELECT login... t_log" />
+                <marker date="1509190210795" expanded="true" signature="893:1039" ph="SELECT login... t_log" />
+                <marker date="1509190210795" expanded="true" signature="1113:1240" ph="SELECT login... t_log" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/manage.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <marker date="1509248132553" expanded="true" signature="319:378" ph="SELECT board... t_manage" />
+                <marker date="1509248132553" expanded="true" signature="469:527" ph="SELECT user_... t_manage" />
+                <marker date="1509248132553" expanded="true" signature="581:657" ph="DELETE FROM " />
+                <marker date="1509248132553" expanded="true" signature="708:797" ph="INSERT INTO t_manage... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -269,7 +303,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/vo/UserVo.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/service/AccountBiz.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/service/LogService.java" />
@@ -277,7 +310,6 @@
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/service/impl/LogBizImpl.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/util/LogBuilder.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/filter/forum.md" />
-        <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/filter/LoginFilter.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/control/FourmControl.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/exception/UserExistException.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/service/impl/FourmBizImpl.java" />
@@ -286,7 +318,6 @@
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/service/FourmBiz.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/vo/PostVo.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/vo/TopicVo.java" />
-        <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Topic.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/service/UserBiz.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/service/impl/UserBizImpl.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/control/UserControl.java" />
@@ -310,8 +341,6 @@
         <option value="$PROJECT_DIR$/../serious/src/test/java/com/hand13/bbs/test/TopicPostTest.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/PostDaoImpl.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/TopicDaoImpl.java" />
-        <option value="$PROJECT_DIR$/../serious/src/main/resources/mybatis/PostDao.xml" />
-        <option value="$PROJECT_DIR$/../serious/src/main/resources/mybatis/TopicDao.xml" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/ManageDao.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/resources/mybatis/manage.xml" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/ManageDaoImpl.java" />
@@ -320,6 +349,11 @@
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/impl/RoleDaoImpl.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/User.java" />
         <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/realm/UserRealm.java" />
+        <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Topic.java" />
+        <option value="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Post.java" />
+        <option value="$PROJECT_DIR$/../serious/src/main/resources/mybatis/TopicDao.xml" />
+        <option value="$PROJECT_DIR$/../serious/src/main/resources/mybatis/PostDao.xml" />
       </list>
     </option>
   </component>
@@ -558,6 +592,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serious" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serious" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1183,7 +1247,7 @@
       <workItem from="1509072565181" duration="8421000" />
       <workItem from="1509110748552" duration="65000" />
       <workItem from="1509156517935" duration="24334000" />
-      <workItem from="1509242265007" duration="5456000" />
+      <workItem from="1509242265007" duration="6679000" />
     </task>
     <task id="LOCAL-00001" summary="second">
       <created>1509170601268</created>
@@ -1213,7 +1277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509192879787</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="role">
+      <created>1509248168596</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1509248168596</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1249,7 +1320,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91447000" />
+    <option name="totallyTimeSpent" value="92670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -1262,7 +1333,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13993949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14145234" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1326,7 +1397,8 @@
     <MESSAGE value="third" />
     <MESSAGE value="readme" />
     <MESSAGE value="service" />
-    <option name="LAST_COMMIT_MESSAGE" value="service" />
+    <MESSAGE value="role" />
+    <option name="LAST_COMMIT_MESSAGE" value="role" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1339,31 +1411,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/vo/PostVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/TopicDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/LogDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1386,6 +1438,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1429,6 +1482,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1451,6 +1507,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1639,23 +1698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/TopicDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <marker date="1509245084609" expanded="true" signature="271:569" ph="INSERT INTO t_topic... " />
-            <marker date="1509245084609" expanded="true" signature="623:665" ph="DELETE FROM " />
-            <marker date="1509245084609" expanded="true" signature="768:804" ph="SELECT topic... t_topic" />
-            <marker date="1509245084609" expanded="true" signature="1324:1358" ph="SELECT topic... t_topic" />
-            <marker date="1509245084609" expanded="true" signature="1461:1475" ph="SELECT topic... t_topic" />
-            <marker date="1509245084609" expanded="true" signature="1461:1497" ph="SELECT topic... t_topic" />
-            <marker date="1509245084609" expanded="true" signature="1542:1826" ph="SELECT topic... t_topic" />
-            <marker date="1509245084609" expanded="true" signature="1898:2147" ph="UPDATE t_top... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/userDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1712,37 +1754,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/PostDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="47" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="4" selection-end-column="47" />
-          <folding>
-            <marker date="1509245084655" expanded="true" signature="267:547" ph="INSERT INTO t_post... " />
-            <marker date="1509245084655" expanded="true" signature="608:652" ph="DELETE FROM " />
-            <marker date="1509245084655" expanded="true" signature="1420:1552" ph="UPDATE t_pos... " />
-            <marker date="1509245084655" expanded="true" signature="1595:1823" ph="SELECT post_... t_post" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/dao/ManageDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/manage.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <marker date="1509248132553" expanded="true" signature="319:378" ph="SELECT board... t_manage" />
-            <marker date="1509248132553" expanded="true" signature="469:527" ph="SELECT user_... t_manage" />
-            <marker date="1509248132553" expanded="true" signature="581:657" ph="DELETE FROM " />
-            <marker date="1509248132553" expanded="true" signature="708:797" ph="INSERT INTO t_manage... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1827,10 +1843,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/filter/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="374">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Topic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#2019#2020#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/entity/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+          <folding>
+            <element signature="e#1704#1705#0" expanded="true" />
+            <element signature="e#1735#1736#0" expanded="true" />
+            <element signature="e#1783#1784#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/TopicDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <marker date="1509250182443" expanded="true" signature="271:569" ph="INSERT INTO t_topic... " />
+            <marker date="1509250182443" expanded="true" signature="623:665" ph="DELETE FROM " />
+            <marker date="1509250182443" expanded="true" signature="768:804" ph="SELECT topic... t_topic" />
+            <marker date="1509250182443" expanded="true" signature="1324:1358" ph="SELECT topic... t_topic" />
+            <marker date="1509250182443" expanded="true" signature="1461:1475" ph="SELECT topic... t_topic" />
+            <marker date="1509250182443" expanded="true" signature="1461:1497" ph="SELECT topic... t_topic" />
+            <marker date="1509250182443" expanded="true" signature="1542:1880" ph="SELECT topic... t_topic" />
+            <marker date="1509250182443" expanded="true" signature="1542:1941" ph="SELECT topic... t_topic" />
+            <marker date="1509250182443" expanded="true" signature="2013:2262" ph="UPDATE t_top... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/LogDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <marker date="1509190210795" expanded="true" signature="264:370" ph="INSERT INTO t_log... " />
+            <marker date="1509190210795" expanded="true" signature="426:473" ph="DELETE FROM " />
+            <marker date="1509190210795" expanded="true" signature="543:626" ph="SELECT login... t_log" />
+            <marker date="1509190210795" expanded="true" signature="701:810" ph="SELECT login... t_log" />
+            <marker date="1509190210795" expanded="true" signature="893:1039" ph="SELECT login... t_log" />
+            <marker date="1509190210795" expanded="true" signature="1113:1240" ph="SELECT login... t_log" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/manage.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <marker date="1509248132553" expanded="true" signature="319:378" ph="SELECT board... t_manage" />
+            <marker date="1509248132553" expanded="true" signature="469:527" ph="SELECT user_... t_manage" />
+            <marker date="1509248132553" expanded="true" signature="581:657" ph="DELETE FROM " />
+            <marker date="1509248132553" expanded="true" signature="708:797" ph="INSERT INTO t_manage... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/mybatis/PostDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <marker date="1509250182473" expanded="true" signature="267:547" ph="INSERT INTO t_post... " />
+            <marker date="1509250182473" expanded="true" signature="608:652" ph="DELETE FROM " />
+            <marker date="1509250182473" expanded="true" signature="1420:1552" ph="UPDATE t_pos... " />
+            <marker date="1509250182473" expanded="true" signature="1595:1868" ph="SELECT post_... t_post" />
+            <marker date="1509250182473" expanded="true" signature="1595:1928" ph="SELECT post_... t_post" />
           </folding>
         </state>
       </provider>
