@@ -47,7 +47,7 @@
                 <tbody>
                 <c:forEach var="topic" items="${topics}">
                 <tr>
-                    <td><a>${topic.topicTitle}</a></td>
+                    <td><a href="${pageContext.request.contextPath}/forum/topic/${topic.topicId}/1">${topic.topicTitle}</a></td>
                     <td><h2>${topic.username}</h2></td>
                     <td><h2>${topic.createTime}</h2></td>
                     <td><h2>${topic.topicViews}</h2></td>

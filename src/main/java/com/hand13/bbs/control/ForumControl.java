@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 /**
  * Created by hd110 on 2017/10/28.
@@ -39,10 +41,18 @@ public class ForumControl {
     }
     @RequestMapping(path = "/board/{boardName}/{num}")
     public ModelAndView modelShow(@PathVariable(name = "boardName") String boardName,
-                                     @PathVariable(name = "num") String num) {
+                                     @PathVariable(name = "num") String num,HttpServletResponse response)throws IOException {
         Board board = forumBiz.findBoardByName(boardName);
-        int n  = Integer.parseInt(num) - 1;
+        int  n = 0;
+        try {
+            n = Integer.parseInt(num) - 1;
+        }
+        catch (Exception e) {
+            response.sendError(404);
+        }
         List<Topic> topics = forumBiz.findTopicByBoardId(board.getBoardId(),n*TOPIC_SIZE,TOPIC_SIZE);
+        if(topics.size() == 0 && n != 0 )
+            response.sendError(404);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("board",board);
         modelAndView.addObject("topics",topics);
@@ -52,11 +62,20 @@ public class ForumControl {
     }
     @RequestMapping(path = "/topic/{topicId}/{num}")
     public ModelAndView topicShow(@PathVariable(name = "topicId") String topicId,
-                                     @PathVariable(name = "num") String num) {
+                                     @PathVariable(name = "num") String num,HttpServletResponse response)throws IOException {
         int id = Integer.parseInt(topicId);
-        int n = Integer.parseInt(num) - 1;
+        int n = 0;
+        try {
+            n = Integer.parseInt(num) - 1;
+        }
+        catch (Exception e) {
+            response.sendError(404);
+        }
         Topic topic = forumBiz.findTopicByTopicId(id);
-        List<Post> posts = forumBiz.findPostByTopicId(id,n,POST_SIZE);
+        List<Post> posts = forumBiz.findPostByTopicId(id,n*POST_SIZE,POST_SIZE);
+        if(posts.size() ==0 && n != 0){
+            response.sendError(404);
+        }
         Post mainPost = null;
         for(Post post: posts){
             if(post.getPostType() == 0){
@@ -64,8 +83,10 @@ public class ForumControl {
                 break;
             }
         }
-        posts.remove(mainPost);
+        if(mainPost != null)
+            posts.remove(mainPost);
         ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("posts");
         modelAndView.addObject("topic",topic);
         modelAndView.addObject("mainPost",mainPost);
         modelAndView.addObject("posts",posts);

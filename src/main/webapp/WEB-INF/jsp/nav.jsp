@@ -9,8 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <nav>
     <ul class="layui-nav">
-        <li class="layui-nav-item layui-this"><a href="">板块群</a></li>
-        <li class="layui-nav-item"><a href="">社区</a></li>
+        <li class="layui-nav-item layui-this"><a href="${pageContext.request.contextPath}/forum/show">板块群</a></li>
     </ul>
     <ul class="layui-nav layui-layout-right">
         <shiro:user>
