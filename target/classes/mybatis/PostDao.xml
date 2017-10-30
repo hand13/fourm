@@ -27,14 +27,14 @@
     <select id="getPostByUserIdWithPage" resultType="Post">
         <include refid="post"/>
         WHERE user_id = #{userId}
-        ORDER BY create_time DESC
+        ORDER BY create_time
         LIMIT #{start},#{size}
     </select>
 
     <select id="getPostByTopicIdWithPage" resultType="Post" parameterType="map">
         <include refid="post"/>
         WHERE topic_id = #{topicId}
-        ORDER BY create_time DESC
+        ORDER BY create_time
         LIMIT #{start},#{size}
     </select>
 
@@ -46,9 +46,11 @@
     </update>
     <sql id="post">
         SELECT
-        post_id AS postId,user_id AS userId,board_id AS boardId,topic_id AS topicId,
+        post_id AS postId,t_post.user_id AS userId,board_id AS boardId,topic_id AS topicId,
         post_type AS postType,post_title AS postTitle,post_context AS postContext,
-        create_time AS createTime
+        create_time AS createTime,
+        t_user.user_name AS username
         FROM t_post
+        LEFT JOIN t_user ON t_post.user_id = t_user.user_id
     </sql>
 </mapper>

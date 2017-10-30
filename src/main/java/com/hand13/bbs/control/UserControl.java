@@ -51,6 +51,11 @@ public class UserControl {
         accountBiz.updatePassword(user.getUserId(),password);
 
     }
+    @RequestMapping(path = "/logout")
+    public void logOut() {
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+    }
     public UserBiz getUserBiz() {
         return userBiz;
     }

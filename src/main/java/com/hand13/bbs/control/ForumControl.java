@@ -8,8 +8,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 /**
  * Created by hd110 on 2017/10/28.
  * edited by hand13
@@ -30,14 +31,13 @@ public class ForumControl {
         this.forumBiz = forumBiz;
     }
 
-    public ModelAndView show() {
-        ModelAndView modelAndView = new ModelAndView();
+    @RequestMapping("/show")
+    public String show(HttpServletRequest request) {
         List<Board> boardList = forumBiz.getAllBoard();
-        modelAndView.addObject("boards",boardList);
-        modelAndView.setViewName("main");
-        return modelAndView;
+        request.setAttribute("boards",boardList);
+        return "main";
     }
-    @RequestMapping(path = "board/{boardName}/{num}")
+    @RequestMapping(path = "/board/{boardName}/{num}")
     public ModelAndView modelShow(@PathVariable(name = "boardName") String boardName,
                                      @PathVariable(name = "num") String num) {
         Board board = forumBiz.findBoardByName(boardName);
@@ -46,7 +46,7 @@ public class ForumControl {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("board",board);
         modelAndView.addObject("topics",topics);
-        modelAndView.setViewName("");
+        modelAndView.setViewName("main");
         return modelAndView;
     }
     @RequestMapping(path = "/topic/{topicId}/{num}")
@@ -93,4 +93,5 @@ public class ForumControl {
         modelAndView.setViewName("");
         return modelAndView;
     }
+
 }

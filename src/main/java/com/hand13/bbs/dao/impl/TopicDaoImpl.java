@@ -18,7 +18,7 @@ import java.util.Map;
 @Repository
 public class TopicDaoImpl implements TopicDao {
 
-    private static final String TOPICDAO_SQL = "com.hand13.bbs.dao.TopicDao";
+    private static final String TOPICDAO_SQL = "com.hand13.bbs.dao.TopicDao.";
 
     private SqlSessionTemplate template;
 

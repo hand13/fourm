@@ -10,7 +10,7 @@
           p:hashAlgorithmName="md5"
           p:hashIterations="2"
           p:hashSalted="true"/>
-    <bean id="securityManager" class="org.apache.shiro.mgt.DefaultSecurityManager"
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager"
           p:realm-ref="userRealm"/>
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean"
           p:staticMethod="org.apache.shiro.SecurityUtils.setSecurityManager"

@@ -3,6 +3,7 @@ package com.hand13.bbs.entity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by hd110 on 2017/10/25.
@@ -13,6 +14,16 @@ public class Board implements Serializable{
     private String boardName;
     private String boardDesc;
     private Integer topicNum;
+    private List<String> managers;
+    private List<Manage> manages;
+
+    public List<Manage> getManages() {
+        return manages;
+    }
+
+    public void setManages(List<Manage> manages) {
+        this.manages = manages;
+    }
 
     public Integer getBoardId() {
         return boardId;
@@ -44,6 +55,14 @@ public class Board implements Serializable{
 
     public void setTopicNum(Integer topicNum) {
         this.topicNum = topicNum;
+    }
+
+    public List<String> getManagers() {
+        return managers;
+    }
+
+    public void setManagers(List<String> managers) {
+        this.managers = managers;
     }
 
     @Override

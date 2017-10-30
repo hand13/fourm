@@ -66,12 +66,14 @@ public class ForumBizImpl implements ForumBiz {
     }
 
     @Override
+    //@Transactional
     public Board findBoardByName(String boardName) {
         Board board = boardDao.findBoardByName(boardName);
         return board;
     }
 
     @Override
+    //@Transactional
     public List<Topic> findTopicByBoardId(int boardId,int start,int size) {
         return topicDao.getTopicByBoardIdWithPage(boardId,start,size);
     }
