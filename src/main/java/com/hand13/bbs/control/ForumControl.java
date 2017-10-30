@@ -42,11 +42,12 @@ public class ForumControl {
                                      @PathVariable(name = "num") String num) {
         Board board = forumBiz.findBoardByName(boardName);
         int n  = Integer.parseInt(num) - 1;
-        List<Topic> topics = forumBiz.findTopicByBoardId(board.getBoardId(),n,TOPIC_SIZE);
+        List<Topic> topics = forumBiz.findTopicByBoardId(board.getBoardId(),n*TOPIC_SIZE,TOPIC_SIZE);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("board",board);
         modelAndView.addObject("topics",topics);
-        modelAndView.setViewName("main");
+        modelAndView.addObject("num",num);
+        modelAndView.setViewName("topics");
         return modelAndView;
     }
     @RequestMapping(path = "/topic/{topicId}/{num}")

@@ -58,6 +58,10 @@ public class UserBizImpl implements UserBiz {
         if(tmp != null)
             throw new UserExistException();
         PasswordHelper passwordHelper = new PasswordHelper();
+        user.setTopics(0);
+        user.setLocked(0);
+        user.setRoleIds("1;");
+        user.setCredits(0);
         passwordHelper.encrypt(user);
         userDao.addUser(user);
     }

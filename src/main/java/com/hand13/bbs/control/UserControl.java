@@ -22,25 +22,30 @@ public class UserControl {
     private UserBiz userBiz;
     private AccountBiz accountBiz;
     @RequestMapping(path = "/login",method = RequestMethod.POST)
-    public void login(HttpServletRequest request, HttpServletResponse response) {
+    public String login(HttpServletRequest request) {
         Subject subject = SecurityUtils.getSubject();
         String username = (String)subject.getPrincipal();
         User user = userBiz.findUserByName(username);
         userBiz.login(user,request);
         HttpSession session = request.getSession();
         session.setAttribute("user",user);
+        return "redirect:/forum/show";
     }
 
     @RequestMapping(path = "/register",method = RequestMethod.POST)
-    public ModelAndView register(User user, ModelAndView modelAndView) {
+    public ModelAndView register(HttpServletRequest request, ModelAndView modelAndView) {
+        User user = new User();
+        user.setPassword(request.getParameter("password"));
+        user.setUserName(request.getParameter("username"));
         try {
             userBiz.register(user);
         }
         catch (UserExistException ueu) {
             modelAndView.addObject("error",ueu.getMessage());
-            modelAndView.setViewName("regiest");
+            modelAndView.setViewName("redirect:/register.jsp");
             return modelAndView;
         }
+        modelAndView.setViewName("redirect:/forum/show");
         return modelAndView;
     }
 
@@ -52,9 +57,10 @@ public class UserControl {
 
     }
     @RequestMapping(path = "/logout")
-    public void logOut() {
+    public String logOut() {
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
+        return "redirect:/forum/show";
     }
     public UserBiz getUserBiz() {
         return userBiz;

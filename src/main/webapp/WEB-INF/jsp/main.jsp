@@ -1,5 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: hd110
@@ -33,39 +32,14 @@
         body{
             font-size: 12px;
         }
-        no {
+        .no {
             display: none;
         }
     </style>
 </head>
 <body>
 <div>
-    <nav>
-        <ul class="layui-nav">
-            <li class="layui-nav-item layui-this"><a href="">板块群</a></li>
-            <li class="layui-nav-item"><a href="">社区</a></li>
-        </ul>
-        <ul class="layui-nav layui-layout-right">
-            <shiro:user>
-            <li class="layui-nav-item">
-                <a href="javascript:;">
-                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                    <shiro:principal/>
-                </a>
-                <dl class="layui-nav-child">
-                    <dd><a href="">我的帖子</a></dd>
-                    <dd><a href="">安全设置</a></dd>
-                    <dd><a href="${pageContext.request.contextPath}/logout">登出</a></dd>
-                </dl>
-            </li>
-            </shiro:user>
-            <shiro:guest>
-                <li class="layui-nav-item">
-                    <a id="login">请登陆</a>
-                </li>
-            </shiro:guest>
-        </ul>
-    </nav>
+    <jsp:include page="nav.jsp"/>
 </div>
 <div class="layui-row">
     <div id="content" class="layui-col-md9 layui-col-md-offset1">
@@ -87,5 +61,13 @@
         </div>
     </div>
 </div>
+<jsp:include page="lg.jsp"/>
+    <script>
+            $("#login").on("click",function () {
+                layui.use('layer',function () {
+                    layer.open({type:1,content:$('#loginPage'),title:"登陆"}) ;
+                });
+            });
+    </script>
 </body>
 </html>
