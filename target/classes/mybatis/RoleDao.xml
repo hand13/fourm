@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand13.bbs.dao.RoleDao">
+    <select id="getAllRole" resultType="Role">
+        SELECT role_id AS roleId,role AS role,des AS des,
+            avaiLable AS  available, resource_ids AS resourceIds
+        FROM t_role
+    </select>
+
+    <select id="getRoleByName" resultType="Role">
+        SELECT role_id AS roleId,role AS role,des AS des,
+        avaiLable AS  available, resource_ids AS resourceIds
+        FROM t_role
+        WHERE role = ${roleName}
+    </select>
+
+    <select id="getRoleById" resultType="Role">
+        SELECT role_id AS roleId,role AS role,des AS des,
+        avaiLable AS  available, resource_ids AS resourceIds
+        FROM t_role
+        WHERE role_id = ${roleId}
+    </select>
+
+    <insert id="addRole" parameterType="Role">
+        INSERT INTO t_role(role,des,available,resource_ids)
+                VALUES (#{role},#{des},#{available},#{resourceIds})
+    </insert>
+
+    <update id="updateRole" parameterType="Role">
+        UPDATE t_role SET role = #{role},
+            des = #{des},
+            available = #{available},
+            resource_ids = #{resourceIds}
+        WHERE role_id = #{roleId}
+    </update>
+
+    <delete id="deleteRole">
+        DELETE FROM t_role WHERE role_id = #{roleId}
+    </delete>
+
+    <select id="getRole" resultType="string">
+        SELECT role FROM t_role WHERE role_id = #{roleId}
+    </select>
+</mapper>

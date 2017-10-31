@@ -1,0 +1,280 @@
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:539) - Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:485) - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG [496627227@qtp-1409215177-0] (AbstractApplicationContext.java:785) - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@7918c8f]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:515) - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:449) - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:485) - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:537) - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@2e0b71bd]
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:449) - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:485) - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:559) - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@ea7dc59]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'com.hand13.bbs.exception.AuthorizationExceptionHandler#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:449) - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:485) - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:696) - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@601d9280]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'jspSolver'
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:449) - Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:485) - Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:757) - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@7d457bf6]
+DEBUG [496627227@qtp-1409215177-0] (JndiTemplate.java:150) - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+DEBUG [496627227@qtp-1409215177-0] (JndiLocatorSupport.java:101) - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException; remaining name 'spring.liveBeansView.mbeanDomain'
+DEBUG [496627227@qtp-1409215177-0] (JndiTemplate.java:150) - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+DEBUG [496627227@qtp-1409215177-0] (JndiPropertySource.java:99) - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: null. Returning null.
+DEBUG [496627227@qtp-1409215177-0] (PropertySourcesPropertyResolver.java:91) - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:568) - Published WebApplicationContext of servlet 'dispatcher' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcher]
+ INFO [496627227@qtp-1409215177-0] (FrameworkServlet.java:508) - FrameworkServlet 'dispatcher': initialization completed in 2503 ms
+DEBUG [496627227@qtp-1409215177-0] (HttpServletBean.java:174) - Servlet 'dispatcher' configured successfully
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/logout]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /logout
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public java.lang.String com.hand13.bbs.control.UserControl.logOut()]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'userControl'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:955) - Last-Modified value for [/sword/logout] is: -1
+DEBUG [496627227@qtp-1409215177-0] (SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/sword; Max-Age=0; Expires=Mon, 30-Oct-2017 07:49:33 GMT]
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:1670) - Invoking afterPropertiesSet() on bean with name 'redirect:/index.jsp'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:/index.jsp'; URL [/index.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/forum/show]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /forum/show
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public java.lang.String com.hand13.bbs.control.ForumControl.show(javax.servlet.http.HttpServletRequest)]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'forumControl'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:955) - Last-Modified value for [/sword/forum/show] is: -1
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:1670) - Invoking afterPropertiesSet() on bean with name 'main'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.JstlView: name 'main'; URL [/WEB-INF/jsp/main.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (InternalResourceView.java:166) - Forwarding to resource [/WEB-INF/jsp/main.jsp] in InternalResourceView 'main'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/forum/board/%E8%AE%A1%E7%AE%97%E6%9C%BA/1]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /forum/board/计算机/1
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public org.springframework.web.servlet.ModelAndView com.hand13.bbs.control.ForumControl.modelShow(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'forumControl'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:955) - Last-Modified value for [/sword/forum/board/%E8%AE%A1%E7%AE%97%E6%9C%BA/1] is: -1
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:1670) - Invoking afterPropertiesSet() on bean with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.JstlView: name 'topics'; URL [/WEB-INF/jsp/topics.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'num' of type [java.lang.String] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'boardName' of type [java.lang.String] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'board' of type [com.hand13.bbs.entity.Board] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'topics' of type [java.util.ArrayList] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'org.springframework.validation.BindingResult.board' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (InternalResourceView.java:166) - Forwarding to resource [/WEB-INF/jsp/topics.jsp] in InternalResourceView 'topics'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (AuthenticatingRealm.java:569) - Looked up AuthenticationInfo [hand13] from doGetAuthenticationInfo
+DEBUG [496627227@qtp-1409215177-0] (AuthenticatingRealm.java:507) - AuthenticationInfo caching is disabled for info [hand13].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - hand13, rememberMe=false].
+DEBUG [496627227@qtp-1409215177-0] (SimpleCredentialsMatcher.java:95) - Performing credentials equality check for tokenCredentials of type [org.apache.shiro.crypto.hash.SimpleHash and accountCredentials of type [org.apache.shiro.crypto.hash.SimpleHash]
+DEBUG [496627227@qtp-1409215177-0] (SimpleCredentialsMatcher.java:101) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+DEBUG [496627227@qtp-1409215177-0] (AbstractAuthenticator.java:231) - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - hand13, rememberMe=false].  Returned account [hand13]
+DEBUG [496627227@qtp-1409215177-0] (DefaultSubjectContext.java:102) - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+DEBUG [496627227@qtp-1409215177-0] (DefaultSecurityManager.java:436) - Context already contains a session.  Returning.
+DEBUG [496627227@qtp-1409215177-0] (DefaultSubjectContext.java:102) - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+DEBUG [496627227@qtp-1409215177-0] (SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/sword; Max-Age=0; Expires=Mon, 30-Oct-2017 07:49:56 GMT]
+DEBUG [496627227@qtp-1409215177-0] (AbstractRememberMeManager.java:300) - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing POST request for [/sword/login]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /login
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public java.lang.String com.hand13.bbs.control.UserControl.login(javax.servlet.http.HttpServletRequest)]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'userControl'
+DEBUG [496627227@qtp-1409215177-0] (DefaultCorsProcessor.java:77) - Skip CORS processing: request is from same origin
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:1670) - Invoking afterPropertiesSet() on bean with name 'redirect:/forum/show'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:/forum/show'; URL [/forum/show]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/forum/show]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /forum/show
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public java.lang.String com.hand13.bbs.control.ForumControl.show(javax.servlet.http.HttpServletRequest)]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'forumControl'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:955) - Last-Modified value for [/sword/forum/show] is: -1
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.JstlView: name 'main'; URL [/WEB-INF/jsp/main.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (InternalResourceView.java:166) - Forwarding to resource [/WEB-INF/jsp/main.jsp] in InternalResourceView 'main'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/forum/board/%E8%AE%A1%E7%AE%97%E6%9C%BA/1]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /forum/board/计算机/1
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public org.springframework.web.servlet.ModelAndView com.hand13.bbs.control.ForumControl.modelShow(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'forumControl'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:955) - Last-Modified value for [/sword/forum/board/%E8%AE%A1%E7%AE%97%E6%9C%BA/1] is: -1
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.JstlView: name 'topics'; URL [/WEB-INF/jsp/topics.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'num' of type [java.lang.String] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'boardName' of type [java.lang.String] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'board' of type [com.hand13.bbs.entity.Board] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'topics' of type [java.util.ArrayList] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'org.springframework.validation.BindingResult.board' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (InternalResourceView.java:166) - Forwarding to resource [/WEB-INF/jsp/topics.jsp] in InternalResourceView 'topics'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/forum/addTopic/1]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /forum/addTopic/1
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public org.springframework.web.servlet.ModelAndView com.hand13.bbs.control.ForumControl.getTopicWritePage(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'forumControl'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:955) - Last-Modified value for [/sword/forum/addTopic/1] is: -1
+DEBUG [496627227@qtp-1409215177-0] (AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+ INFO [496627227@qtp-1409215177-0] (AuthorizingRealm.java:248) - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (UserRealm.java:51) - start get role-----------------
+DEBUG [496627227@qtp-1409215177-0] (UserRealm.java:53) - 1------------------------
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (RoleDaoImpl.java:65) - user
+DEBUG [496627227@qtp-1409215177-0] (UserRealm.java:56) - stop--------------------
+DEBUG [496627227@qtp-1409215177-0] (UserRealm.java:59) - user--------------------
+DEBUG [496627227@qtp-1409215177-0] (AbstractAutowireCapableBeanFactory.java:1670) - Invoking afterPropertiesSet() on bean with name 'writeTopic'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0'
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.JstlView: name 'writeTopic'; URL [/WEB-INF/jsp/writeTopic.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'boardId' of type [java.lang.Integer] to request in view with name 'writeTopic'
+DEBUG [496627227@qtp-1409215177-0] (InternalResourceView.java:166) - Forwarding to resource [/WEB-INF/jsp/writeTopic.jsp] in InternalResourceView 'writeTopic'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing POST request for [/sword/forum/addTopic/1]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /forum/addTopic/1
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public org.springframework.web.servlet.ModelAndView com.hand13.bbs.control.ForumControl.addTopic(javax.servlet.http.HttpServletRequest,com.hand13.bbs.entity.Topic,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'forumControl'
+DEBUG [496627227@qtp-1409215177-0] (DefaultCorsProcessor.java:77) - Skip CORS processing: request is from same origin
+DEBUG [496627227@qtp-1409215177-0] (AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+ INFO [496627227@qtp-1409215177-0] (AuthorizingRealm.java:248) - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (UserRealm.java:51) - start get role-----------------
+DEBUG [496627227@qtp-1409215177-0] (UserRealm.java:53) - 1------------------------
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (RoleDaoImpl.java:65) - user
+DEBUG [496627227@qtp-1409215177-0] (UserRealm.java:56) - stop--------------------
+DEBUG [496627227@qtp-1409215177-0] (UserRealm.java:59) - user--------------------
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'transactionManager'
+DEBUG [496627227@qtp-1409215177-0] (AbstractPlatformTransactionManager.java:367) - Creating new transaction with name [com.hand13.bbs.service.impl.ForumBizImpl.addTopic]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG [496627227@qtp-1409215177-0] (DataSourceTransactionManager.java:248) - Acquired Connection [991448920, URL=jdbc:mysql://localhost/serious, UserName=hand13@localhost, MySQL Connector Java] for JDBC transaction
+DEBUG [496627227@qtp-1409215177-0] (DataSourceTransactionManager.java:265) - Switching JDBC Connection [991448920, URL=jdbc:mysql://localhost/serious, UserName=hand13@localhost, MySQL Connector Java] to manual commit
+DEBUG [496627227@qtp-1409215177-0] (AbstractPlatformTransactionManager.java:759) - Initiating transaction commit
+DEBUG [496627227@qtp-1409215177-0] (DataSourceTransactionManager.java:310) - Committing JDBC transaction on Connection [991448920, URL=jdbc:mysql://localhost/serious, UserName=hand13@localhost, MySQL Connector Java]
+DEBUG [496627227@qtp-1409215177-0] (DataSourceTransactionManager.java:368) - Releasing JDBC Connection [991448920, URL=jdbc:mysql://localhost/serious, UserName=hand13@localhost, MySQL Connector Java] after transaction
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:/forum/show'; URL [/forum/show]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/forum/show]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /forum/show
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public java.lang.String com.hand13.bbs.control.ForumControl.show(javax.servlet.http.HttpServletRequest)]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'forumControl'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:955) - Last-Modified value for [/sword/forum/show] is: -1
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.JstlView: name 'main'; URL [/WEB-INF/jsp/main.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (InternalResourceView.java:166) - Forwarding to resource [/WEB-INF/jsp/main.jsp] in InternalResourceView 'main'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/forum/board/%E8%AE%A1%E7%AE%97%E6%9C%BA/1]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /forum/board/计算机/1
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public org.springframework.web.servlet.ModelAndView com.hand13.bbs.control.ForumControl.modelShow(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'forumControl'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:955) - Last-Modified value for [/sword/forum/board/%E8%AE%A1%E7%AE%97%E6%9C%BA/1] is: -1
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.JstlView: name 'topics'; URL [/WEB-INF/jsp/topics.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'num' of type [java.lang.String] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'boardName' of type [java.lang.String] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'board' of type [com.hand13.bbs.entity.Board] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'topics' of type [java.util.ArrayList] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'org.springframework.validation.BindingResult.board' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (InternalResourceView.java:166) - Forwarding to resource [/WEB-INF/jsp/topics.jsp] in InternalResourceView 'topics'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/forum/board/%E8%AE%A1%E7%AE%97%E6%9C%BA/2]
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /forum/board/计算机/2
+DEBUG [496627227@qtp-1409215177-0] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public org.springframework.web.servlet.ModelAndView com.hand13.bbs.control.ForumControl.modelShow(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException]
+DEBUG [496627227@qtp-1409215177-0] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'forumControl'
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:955) - Last-Modified value for [/sword/forum/board/%E8%AE%A1%E7%AE%97%E6%9C%BA/2] is: -1
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:110) - Fetching JDBC Connection from DataSource
+DEBUG [496627227@qtp-1409215177-0] (DataSourceUtils.java:327) - Returning JDBC Connection to DataSource
+DEBUG [496627227@qtp-1409215177-0] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.JstlView: name 'topics'; URL [/WEB-INF/jsp/topics.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'num' of type [java.lang.String] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'boardName' of type [java.lang.String] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'board' of type [com.hand13.bbs.entity.Board] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'topics' of type [java.util.ArrayList] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (AbstractView.java:432) - Added model object 'org.springframework.validation.BindingResult.board' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'topics'
+DEBUG [496627227@qtp-1409215177-0] (InternalResourceView.java:158) - Including resource [/WEB-INF/jsp/topics.jsp] in InternalResourceView 'topics'
+DEBUG [496627227@qtp-1409215177-0] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [814304568@qtp-1409215177-3] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/logout]
+DEBUG [814304568@qtp-1409215177-3] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /logout
+DEBUG [814304568@qtp-1409215177-3] (AbstractHandlerMethodMapping.java:317) - Returning handler method [public java.lang.String com.hand13.bbs.control.UserControl.logOut()]
+DEBUG [814304568@qtp-1409215177-3] (AbstractBeanFactory.java:251) - Returning cached instance of singleton bean 'userControl'
+DEBUG [814304568@qtp-1409215177-3] (DispatcherServlet.java:955) - Last-Modified value for [/sword/logout] is: -1
+DEBUG [814304568@qtp-1409215177-3] (SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/sword; Max-Age=0; Expires=Mon, 30-Oct-2017 07:50:30 GMT]
+DEBUG [814304568@qtp-1409215177-3] (DefaultSecurityManager.java:550) - Logging out subject with primary principal hand13
+DEBUG [814304568@qtp-1409215177-3] (AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+ INFO [814304568@qtp-1409215177-3] (AuthorizingRealm.java:248) - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+DEBUG [814304568@qtp-1409215177-3] (DispatcherServlet.java:1280) - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:/index.jsp'; URL [/index.jsp]] in DispatcherServlet with name 'dispatcher'
+DEBUG [814304568@qtp-1409215177-3] (FrameworkServlet.java:1000) - Successfully completed request

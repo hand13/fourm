@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85fd7eb2-30ac-48ab-9539-53cf8a55d77c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../serious/src/main/webapp/login.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../serious/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/control/ForumControl.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/control/ForumControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/control/UserControl.java" afterPath="$PROJECT_DIR$/../serious/src/main/java/com/hand13/bbs/control/UserControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/resources/spring-web.xml" afterPath="$PROJECT_DIR$/../serious/src/main/resources/spring-web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../serious/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/../serious/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/src/main/resources/database.properties" afterPath="$PROJECT_DIR$/../serious/src/main/resources/database.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../serious/target/classes/database.properties" afterPath="$PROJECT_DIR$/../serious/target/classes/database.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/../serious/out/" />
     <ignored path="$PROJECT_DIR$/../serious/target/" />
@@ -76,8 +72,8 @@
       <file leaf-file-name="database.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/database.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+            <state relative-caret-position="44">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -1201,7 +1197,7 @@
       <workItem from="1509358545528" duration="4388000" />
       <workItem from="1509366044331" duration="1989000" />
       <workItem from="1509411719687" duration="14830000" />
-      <workItem from="1509434336991" duration="1927000" />
+      <workItem from="1509434336991" duration="2273000" />
     </task>
     <task id="LOCAL-00001" summary="second">
       <created>1509170601268</created>
@@ -1280,7 +1276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509427685999</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="all clear ?">
+      <created>1509436342193</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1509436342193</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1316,11 +1319,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137232000" />
+    <option name="totallyTimeSpent" value="137578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1342,7 +1344,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49925706" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.93759286" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838038" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9821694" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5408618" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1447,7 +1449,8 @@
     <MESSAGE value="get all clear" />
     <MESSAGE value="ps" />
     <MESSAGE value="before end clear" />
-    <option name="LAST_COMMIT_MESSAGE" value="before end clear" />
+    <MESSAGE value="all clear ?" />
+    <option name="LAST_COMMIT_MESSAGE" value="all clear ?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1521,6 +1524,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1907,8 +1911,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../serious/src/main/resources/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        <state relative-caret-position="44">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand13.bbs.dao.BoardDao">
+
+    <insert id="addBoard" parameterType="Board">
+        INSERT INTO t_board (board_name, board_desc, topic_num)
+                VALUES (#{boardName},#{boardDesc},0);
+    </insert>
+
+    <delete id="deleteBoard">
+        DELETE FROM t_board WHERE board_id = #{boardId}
+    </delete>
+
+    <select id="findBoardById" resultType="Board">
+        SELECT board_id AS boardId,
+            board_name AS boardName,
+            board_desc AS boardDesc,
+            topic_num AS topicNum
+        FROM t_board
+        WHERE board_id = #{boardId}
+    </select>
+
+    <select id="findBoardByName" resultType="Board">
+        SELECT board_id AS boardId,
+                board_name AS boardName,
+               board_desc AS boardDesc,
+               topic_num AS topicNum
+        FROM t_board
+        WHERE board_name = #{boardName}
+    </select>
+
+    <select id="findAllBoard" resultMap="board">
+        SELECT t_board.board_id,
+               board_name,
+               board_desc,
+               topic_num,
+               t_manage.user_name AS user_name,
+               t_manage.manage_id AS manageId
+        FROM t_board
+        LEFT JOIN t_manage ON t_board.board_id = t_manage.board_id
+    </select>
+
+    <resultMap id="board" type="Board">
+        <id property="boardId" column="board_id"/>
+        <result property="boardName" column="board_name"/>
+        <result property="boardDesc" column="board_desc"/>
+        <result property="topicNum" column="topic_num"/>
+        <collection property="manages"  ofType="Manage">
+            <id property="manageId" column="manageId"/>
+            <result property="username" column="user_name"/>
+        </collection>
+    </resultMap>
+    <select id="findBoardWithPage" resultType="Board" parameterType="map">
+        SELECT board_id AS boardId,
+        board_name AS boardName,
+        board_desc AS boardDesc,
+        topic_num AS topicNum
+        FROM t_board
+        ORDER BY board_name
+        LIMIT #{currentPage},#{size}
+    </select>
+    <update id="updateBoard" parameterType="Board">
+        UPDATE t_board SET board_name = #{boardName},
+            board_desc = #{boardDesc},
+            topic_num = #{topicNum}
+        WHERE board_id = #{boardId}
+    </update>
+</mapper>
