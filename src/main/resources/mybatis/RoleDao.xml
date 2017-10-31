@@ -40,7 +40,7 @@
         DELETE FROM t_role WHERE role_id = #{roleId}
     </delete>
 
-    <select id="getRole">
+    <select id="getRole" resultType="string">
         SELECT role FROM t_role WHERE role_id = #{roleId}
     </select>
 </mapper>

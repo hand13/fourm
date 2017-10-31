@@ -3,6 +3,8 @@ package com.hand13.bbs.entity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.io.Serializable;
+import java.net.URL;
+import java.net.URLEncoder;
 
 /**
  * Created by hd110 on 2017/10/29.

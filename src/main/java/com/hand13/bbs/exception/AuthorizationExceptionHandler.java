@@ -16,7 +16,7 @@ public class AuthorizationExceptionHandler implements HandlerExceptionResolver {
                                          Object o, Exception e) {
         ModelAndView modelAndView = new ModelAndView();
         if(o instanceof AuthorizationException) {
-            modelAndView.setViewName("");
+            modelAndView.setViewName("redirect:/login.jsp");
         }
         return modelAndView;
     }

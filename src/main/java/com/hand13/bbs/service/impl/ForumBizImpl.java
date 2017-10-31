@@ -79,8 +79,12 @@ public class ForumBizImpl implements ForumBiz {
     }
 
     @Override
+    @Transactional
     public Topic findTopicByTopicId(int id) {
-        return topicDao.getTopicByTopicId(id);
+        Topic topic = topicDao.getTopicByTopicId(id);
+        topic.setTopicViews(topic.getTopicViews() + 1);
+        topicDao.updateTopic(topic);
+        return topic;
     }
 
     @Override
@@ -94,16 +98,20 @@ public class ForumBizImpl implements ForumBiz {
         topic.setLastPost(new Date());
         topic.setCreateTime(new Date());
         topic.setTopicViews(0);
+        topic.setTopicReplics(0);
         topicDao.addTopic(topic);
         Board board = boardDao.findBoardById(topic.getBoardId());
+        board.setTopicNum(board.getTopicNum()+1);
         boardDao.updateBoard(board);
-        board.setTopicNum(board.getBoardId()+1);
     }
 
     @Override
-    public void addPost(Post post) {
+    @Transactional
+    public void addPost(Post post,int topicId) {
         post.setCreateTime(new Date());
+        post.setTopicId(topicId);
         Topic topic = topicDao.getTopicByTopicId(post.getTopicId());
+        post.setBoardId(topic.getBoardId());
         topic.setLastPost(new Date());
         topic.setTopicReplics(topic.getTopicReplics()+1);
         topicDao.updateTopic(topic);

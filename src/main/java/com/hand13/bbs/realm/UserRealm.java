@@ -10,6 +10,8 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -43,10 +45,19 @@ public class UserRealm extends AuthorizingRealm {
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo
             (PrincipalCollection principalCollection) {
+        Logger logger = LoggerFactory.getLogger(this.getClass());
         String username = (String)principalCollection.getPrimaryPrincipal();
         User user = userBiz.findUserByName(username);
+        logger.debug("start get role-----------------");
+        for(int i : user.getRoles()) {
+            logger.debug(i+"------------------------");
+        }
         List<String> roles = roleDao.getRoles(user.getRoles());
+        logger.debug("stop--------------------");
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+        for(String role : roles) {
+            logger.debug(role+"--------------------");
+        }
         info.addRoles(roles);
         return info;
     }

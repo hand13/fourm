@@ -15,6 +15,6 @@ public interface ForumBiz {
     Topic findTopicByTopicId(int id);
     List<Post> findPostByTopicId(int id,int start,int size);
     void addTopic(Topic topic);
-    void addPost(Post post);
+    void addPost(Post post,int topId);
     void addBoard(Board board);
 }

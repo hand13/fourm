@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: hd110
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/fly/css/layui.css">
     <script src="${pageContext.request.contextPath}/fly/layui.js"></script>
     <script src="https://unpkg.com/vue"></script>
+    <script src="<c:url value="/js/fourm-index.js"/> "></script>
     <script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js" type="text/javascript"></script>
     <style>
         a:hover{
@@ -30,7 +32,7 @@
     </div>
     <div>
         <div>
-            <a href="" class="layui-btn">创建主题</a>
+            <a href="${pageContext.request.contextPath}/forum/addTopic/${board.boardId}" class="layui-btn <shiro:guest>layui-btn-disabled</shiro:guest>">创建主题</a>
         </div>
         <div>
             <table lay-filter="test">
@@ -60,7 +62,7 @@
         </div>
         <div>
             <c:if test="${num > 1}">
-            <a class="layui-btn" href="${pageContext.request.contextPath}/forum/board/${board.boardName}/${num - 1}">${num -1 }</a>
+            <a class="layui-btn" href="${pageContext.request.contextPath}/forum/topic/${board.boardName}/${num - 1}">${num -1 }</a>
             </c:if>
             <a class="layui-btn layui-btn-disabled">${num}</a>
             <a class="layui-btn" href="${pageContext.request.contextPath}/forum/board/${board.boardName}/${num +1}">${num + 1}</a>
