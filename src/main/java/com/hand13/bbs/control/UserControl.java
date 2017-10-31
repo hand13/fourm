@@ -60,7 +60,7 @@ public class UserControl {
     public String logOut() {
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
-        return "redirect:/forum/show";
+        return "redirect:/index.jsp";
     }
     public UserBiz getUserBiz() {
         return userBiz;
