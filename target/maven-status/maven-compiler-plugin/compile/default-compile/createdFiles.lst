@@ -25,10 +25,12 @@ com\hand13\bbs\util\LogBuilder.class
 com\hand13\bbs\entity\Resource.class
 com\hand13\bbs\dao\impl\TopicDaoImpl.class
 com\hand13\bbs\filter\LoginFilter.class
+com\hand13\bbs\filter\CFilter.class
 com\hand13\bbs\control\SystemControl.class
 com\hand13\bbs\service\impl\ForumBizImpl.class
 com\hand13\bbs\dao\impl\LogDaoImpl.class
 com\hand13\bbs\dao\ResourceDao.class
+com\hand13\bbs\filter\ConvertFilter.class
 com\hand13\bbs\entity\Manage.class
 com\hand13\bbs\control\UserControl.class
 com\hand13\bbs\dao\LogDao.class
@@ -38,6 +40,7 @@ com\hand13\bbs\dao\RoleDao.class
 com\hand13\bbs\control\ForumControl.class
 com\hand13\bbs\dao\PostDao.class
 com\hand13\bbs\entity\Post.class
+com\hand13\bbs\filter\MyRequest.class
 com\hand13\bbs\service\impl\LogBizImpl.class
 com\hand13\bbs\exception\AuthorizationExceptionHandler.class
 com\hand13\bbs\dao\UserDao.class

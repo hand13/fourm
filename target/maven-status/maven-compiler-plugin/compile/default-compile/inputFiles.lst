@@ -8,6 +8,7 @@ E:\serious\src\main\java\com\hand13\bbs\dao\TopicDao.java
 E:\serious\src\main\java\com\hand13\bbs\control\ForumControl.java
 E:\serious\src\main\java\com\hand13\bbs\entity\vo\UserVo.java
 E:\serious\src\main\java\com\hand13\bbs\filter\LoginFilter.java
+E:\serious\src\main\java\com\hand13\bbs\filter\CFilter.java
 E:\serious\src\main\java\com\hand13\bbs\dao\impl\BoardDaoImpl.java
 E:\serious\src\main\java\com\hand13\bbs\dao\LogDao.java
 E:\serious\src\main\java\com\hand13\bbs\control\UserControl.java
@@ -22,6 +23,7 @@ E:\serious\src\main\java\com\hand13\bbs\entity\Board.java
 E:\serious\src\main\java\com\hand13\bbs\entity\User.java
 E:\serious\src\main\java\com\hand13\bbs\dao\RoleDao.java
 E:\serious\src\main\java\com\hand13\bbs\dao\ResourceDao.java
+E:\serious\src\main\java\com\hand13\bbs\filter\ConvertFilter.java
 E:\serious\src\main\java\com\hand13\bbs\service\impl\ForumBizImpl.java
 E:\serious\src\main\java\com\hand13\bbs\service\ForumBiz.java
 E:\serious\src\main\java\com\hand13\bbs\entity\Resource.java

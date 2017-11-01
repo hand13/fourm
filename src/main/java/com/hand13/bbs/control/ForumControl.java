@@ -6,6 +6,7 @@ import com.hand13.bbs.entity.User;
 import com.hand13.bbs.service.ForumBiz;
 import org.apache.shiro.authz.UnauthenticatedException;
 import org.apache.shiro.authz.annotation.RequiresRoles;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Logger;
+
 /**
  * Created by hd110 on 2017/10/28.
  * edited by hand13
@@ -109,6 +112,9 @@ public class ForumControl {
     @RequestMapping(path = "/addPost/{topicId}")
     @RequiresRoles("user")
     public ModelAndView addPost(HttpServletRequest request, HttpServletResponse response, Post post, @PathVariable(name = "topicId") String topicId)throws IOException {
+        org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass());
+        logger.warn(post.getPostContext()+"-------------------------------------------------------------------------------");
+        logger.warn(request.getParameter("postContext")+"-------------------------------------------------------");
         int tId = parseInt(topicId,response);
         post.setPostType(0);
         User user =(User)request.getSession().getAttribute("user");

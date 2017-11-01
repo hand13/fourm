@@ -40,6 +40,8 @@
         <h1>帖子</h1>
     </div>
     <div>
+        <h1 style="color: #FF5722">主题:${topic.topicTitle}</h1>
+        <h1 style="color:#01AAED;">创建时间:${topic.createTime}</h1>
         <c:if test="${!empty mainPost}">
             <h1>main</h1>
         <table style="width: 900px; background-color: #d4d4d4">
