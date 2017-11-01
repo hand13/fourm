@@ -1,0 +1,7 @@
+INSERT INTO serious.t_topic (board_id, topic_title, user_id, create_time, last_post, topic_views, topic_replics, digest) VALUES (1, '去死吧', 1, '2017-10-30 16:26:50', '2017-10-30 16:26:53', 1, 3, '哈');
+INSERT INTO serious.t_topic (board_id, topic_title, user_id, create_time, last_post, topic_views, topic_replics, digest) VALUES (1, '后', 2, '2017-10-30 16:27:31', '2017-10-30 16:27:33', 1, 0, '龙');
+INSERT INTO serious.t_topic (board_id, topic_title, user_id, create_time, last_post, topic_views, topic_replics, digest) VALUES (1, '是吧', 3, '2017-10-30 16:28:09', '2017-10-30 16:28:12', 2, 2, '分');
+INSERT INTO serious.t_topic (board_id, topic_title, user_id, create_time, last_post, topic_views, topic_replics, digest) VALUES (1, '我有一个大胆的想法', 1, '2017-10-31 10:34:36', '2017-10-31 10:34:36', 0, 0, '哈哈哈哈哈哈');
+INSERT INTO serious.t_topic (board_id, topic_title, user_id, create_time, last_post, topic_views, topic_replics, digest) VALUES (1, 'nice to meet you', 1, '2017-10-31 10:35:16', '2017-10-31 13:21:04', 16, 4, 'oh my god');
+INSERT INTO serious.t_topic (board_id, topic_title, user_id, create_time, last_post, topic_views, topic_replics, digest) VALUES (2, '来玩吧', 1, '2017-10-31 13:25:45', '2017-10-31 13:26:03', 2, 1, '都去死');
+INSERT INTO serious.t_topic (board_id, topic_title, user_id, create_time, last_post, topic_views, topic_replics, digest) VALUES (1, 'ha', 1, '2017-10-31 15:50:07', '2017-10-31 15:50:07', 0, 0, 'ni so fe ');
