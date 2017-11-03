@@ -23,6 +23,7 @@ import java.sql.DriverManager;
 public class UserControl {
     private UserBiz userBiz;
     private AccountBiz accountBiz;
+    //登陆
     @RequestMapping(path = "/login",method = RequestMethod.POST)
     public String login(HttpServletRequest request) {
         Subject subject = SecurityUtils.getSubject();
@@ -34,6 +35,7 @@ public class UserControl {
         return "redirect:/forum/show";
     }
 
+    //注册
     @RequestMapping(path = "/register",method = RequestMethod.POST)
     public ModelAndView register(HttpServletRequest request, ModelAndView modelAndView) {
         User user = new User();
@@ -58,6 +60,7 @@ public class UserControl {
         accountBiz.updatePassword(user.getUserId(),password);
 
     }
+    //注销
     @RequestMapping(path = "/logout")
     public String logOut() {
         Subject subject = SecurityUtils.getSubject();

@@ -24,12 +24,14 @@ public class SystemControl {
         this.accountBiz = accountBiz;
     }
 
+    //锁定账号
     @RequestMapping("/lockUser")
     public void lockUser(HttpServletRequest request) {
         int id = Integer.parseInt(request.getParameter("userId"));
         accountBiz.lockAccount(id);
     }
 
+    //解锁账户
     @RequestMapping("unlockUser")
     public void unlockUser(HttpServletRequest request){
         int id = Integer.parseInt(request.getParameter("userId"));

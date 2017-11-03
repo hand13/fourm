@@ -184,3 +184,12 @@ DEBUG [1853081006@qtp-1946475978-2] (AbstractView.java:432) - Added model object
 DEBUG [1853081006@qtp-1946475978-2] (AbstractView.java:432) - Added model object 'org.springframework.validation.BindingResult.mainPost' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'posts'
 DEBUG [1853081006@qtp-1946475978-2] (InternalResourceView.java:166) - Forwarding to resource [/WEB-INF/jsp/posts.jsp] in InternalResourceView 'posts'
 DEBUG [1853081006@qtp-1946475978-2] (FrameworkServlet.java:1000) - Successfully completed request
+DEBUG [2085360312@qtp-1946475978-7] (DispatcherServlet.java:869) - DispatcherServlet with name 'dispatcher' processing GET request for [/sword/]
+DEBUG [2085360312@qtp-1946475978-7] (AbstractHandlerMethodMapping.java:310) - Looking up handler method for path /
+DEBUG [2085360312@qtp-1946475978-7] (AbstractHandlerMethodMapping.java:320) - Did not find handler method for [/]
+DEBUG [2085360312@qtp-1946475978-7] (AbstractUrlHandlerMapping.java:192) - Matching patterns for request [/] are [/**]
+DEBUG [2085360312@qtp-1946475978-7] (AbstractUrlHandlerMapping.java:226) - URI Template variables for request [/] are {}
+DEBUG [2085360312@qtp-1946475978-7] (AbstractUrlHandlerMapping.java:140) - Mapping [/] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@38dbeed0] and 1 interceptor
+DEBUG [2085360312@qtp-1946475978-7] (DispatcherServlet.java:955) - Last-Modified value for [/sword/] is: -1
+DEBUG [2085360312@qtp-1946475978-7] (DispatcherServlet.java:1048) - Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+DEBUG [2085360312@qtp-1946475978-7] (FrameworkServlet.java:1000) - Successfully completed request
